@@ -58,6 +58,35 @@ double sinl_plus_b(double x, double y, const double PI) {
 	return sin(radians_x) * cos(radians_y) + sin(radians_y) * cos(radians_x);
 }
 
+double cos_five(double x, double PI) {
+	//это 5 * cos(x)
+	double radians_x = x * PI / 180;
+
+	return cos(radians_x) * 5;
+}
+
+double sqrt_and_two(double x, double y) {//a * sqrt(2*b)
+	double under_root = x * 2;//создал отдельную переменную для произведения, на случай, если функц скрт будет 
+	//ругатся на пристутсвие опретора в скобках(которые по идеее для аргументов)
+
+	return y * sqrt(under_root);
+}
+
+double three_sin_2_cos_3(double x, double y, double PI) {
+	double radians_x = x * PI / 180;
+	double dbld_radians_x = radians_x * 2;
+
+	double radians_y = y * PI / 180;
+	double trpld_radians_y = radians_y * 3;
+
+
+	return 3 * sin(dbld_radians_x) * cos(trpld_radians_y);
+}
+
+double minus_fifth_sqrt_in_sqrt(double x, double y) {
+	return -5 * sqrt(x + sqrt(y));
+}
+
 
 
 int main() {
