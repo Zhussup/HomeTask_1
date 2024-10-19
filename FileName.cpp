@@ -74,18 +74,45 @@ int main() {
         cin >> start;
 		double x, y;
 
-        if (start == 0) {
+        if (start == 0) {//выход из проги
             break;
         }
-        else if (start == 1) {
+        else if (start == 1) {//умножение на 2
 			cin >> x;
 
-			cout << " x2 = " << on2(x);
+			cout << " " << x << " *2 = " << on2(x) << endl;
         }
-		else if (start == 2) {
+		else if (start == 2) {//возведение в квадрат
 			cin >> x;
 
-			cout << " X^2 = " <<  in2(x);
+			cout << " " << x << "^2 = " <<  in2(x) << endl;
+		}
+		else if (start == 3) {// модуль
+			cin >> x;
+
+			cout << " |" << x << "| = " << module(x) << endl;
+		}
+		else if (start == 4) {//синус
+			cin >> x;
+
+			cout << " sin(" << x << ") = " << sin2(x, PI) << endl;//тут ѕ» принимаетс€ ќЅя«ј“≈Ћ№Ќќ вторым аргументом
+		}
+		else if (start == 5) {//икс в квадрате умножить на минус семь целых п€ть дест€ых
+			cin >> x;
+
+			cout << " " << x << " ^ 2 * (-7.5) = " << minus_seven_and_half_squared(x) << endl;
+		}
+		else if (start == 6) {
+			cin >> x;
+
+			cout << " (sqrt(" << x << ") * 3 " << three_sqrt << endl;
+		}
+		else if (start == 7) {
+			cin >> x;
+			cout << "\n";
+			cin >> y;
+
+			cout << " (sin(" << x << ")* cos(" << y << ") + sin(" << y << ")* cos(" << x << ")) \n" << sinl_plus_b(x, y, PI);
 		}
     }
 
